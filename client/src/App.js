@@ -1,6 +1,6 @@
 import React from "react";
 import { AuthContextProvider } from "./context/AuthContext";
-import Router from "./Router"; // Ensure Router is imported correctly
+import Router from "./Router";
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;

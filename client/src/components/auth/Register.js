@@ -41,7 +41,7 @@ function Register() {
 
       // await axios.post("http://localhost:5000/auth/", registerData);
       await axios.post(
-        "https://meta-creativity.herokuapp.com/auth/",
+        "https://metacommercehub.onrender.com/auth/",
         registerData
       );
       await getLoggedIn();

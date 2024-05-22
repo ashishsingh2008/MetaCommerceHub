@@ -21,7 +21,7 @@ export default function Filter(props) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ price: toSeach }),
     };
-    const HerokuURI = "https://meta-creativity.herokuapp.com";
+    const HerokuURI = "https://metacommercehub.onrender.com";
     let API_URL = HerokuURI + "/product/findByName";
     let requestOptions = requestOptionsName;
     if (option == 2) {

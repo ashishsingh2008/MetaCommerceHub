@@ -7,7 +7,7 @@ import axios from "axios";
 export default function Cart(props) {
   const [Cart, setCart] = React.useState([]);
   const [cartLength, setCartLength] = React.useState(0);
-  const url = "https://meta-creativity.herokuapp.com";
+  const url = "https://metacommercehub.onrender.com";
   function getData() {
     axios
       .post(url + "/api/user/getCartItems", {})

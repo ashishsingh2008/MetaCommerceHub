@@ -40,7 +40,7 @@ export default function ItemCard(props) {
       };
 
       await axios.post(
-        "https://meta-creativity.herokuapp.com/api/user/cart/addtocart",
+        "https://metacommercehub.onrender.com/api/user/cart/addtocart",
         CartData
       );
       // await axios.post(
@@ -80,7 +80,7 @@ export default function ItemCard(props) {
           <ion-icon
             name={heartStyle}
             style={{ marginLeft: "9rem", color: "#fb0066", fontSize: "35px" }}
-            // onClick={HandleWishlist}
+          // onClick={HandleWishlist}
           ></ion-icon>
         </div>
         <Card.Text style={{ minHeight: "5rem" }}>

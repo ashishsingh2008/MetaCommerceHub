@@ -6,15 +6,11 @@ import { Button } from "react-bootstrap";
 function LogOutBtn() {
   const { getLoggedIn } = useContext(AuthContext);
 
-  const history = useNavigate();
-  /**
-   * function to Log out 
-   */
+  const navigate = useNavigate();
   async function logOut() {
-    // await axios.get("http://localhost:5000/auth/logout");
-    await axios.get("https://meta-creativity.herokuapp.com/auth/logout");
+    await axios.post("https://metacommercehub.onrender.com/auth/logout");
     await getLoggedIn();
-    history.push("/login");
+    navigate("/login");
   }
 
   return (

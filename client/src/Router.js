@@ -22,7 +22,7 @@ function Router() {
 
   useEffect(() => {
     axios
-      .post("https://meta-creativity.herokuapp.com/api/user/getCartItems", {})
+      .post("https://metacommercehub.onrender.com/api/user/getCartItems", {})
       .then((res) => {
         setCartSize(res.data.cartItems.length);
       })

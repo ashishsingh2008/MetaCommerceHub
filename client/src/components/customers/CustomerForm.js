@@ -13,7 +13,7 @@ function CustomerForm({ getCustomers }) {
       };
       // await axios.post("http://localhost:5000/customer/", customerData);
       await axios.post(
-        "https://meta-creativity.herokuapp.com/customer/",
+        "https://metacommercehub.onrender.com/customer/",
         customerData
       );
       getCustomers();

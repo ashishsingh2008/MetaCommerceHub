@@ -13,7 +13,7 @@ function Login() {
   const [eye, setEye] = useState(false);
   const [passType, setPassType] = useState("password");
   const { getLoggedIn } = useContext(AuthContext);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   function eyeCheck() {
     setEye(!eye);
@@ -32,13 +32,12 @@ function Login() {
         password,
       };
 
-      // await axios.post("http://localhost:5000/auth/login", loginData);
       await axios.post(
-        "https://meta-creativity.herokuapp.com/auth/login",
+        "https://metacommercehub.onrender.com/auth/login",
         loginData
       );
       await getLoggedIn();
-      history.push("/Item");
+      navigate("/Item");
     } catch (err) {
       console.error(err);
     }

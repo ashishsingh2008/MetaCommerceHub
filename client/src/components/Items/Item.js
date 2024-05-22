@@ -6,7 +6,7 @@ export default function Item(props) {
 
   async function getProducts() {
     const ProductRes = await axios.get(
-      "https://meta-creativity.herokuapp.com/product/"
+      "https://metacommercehub.onrender.com/product/"
     );
     setProduct(ProductRes.data);
   }

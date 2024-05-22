@@ -9,7 +9,7 @@ function Customers() {
   async function getCustomers() {
     // const customersRes = await axios.get("http://localhost:5000/customer/");
     const customersRes = await axios.get(
-      "https://meta-creativity.herokuapp.com/customer/"
+      "https://metacommercehub.onrender.com/customer/"
     );
     setCustomers(customersRes.data);
   }
